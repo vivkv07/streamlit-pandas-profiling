@@ -14,7 +14,7 @@ with colb:
     st.title(" Data Profiling using streamlit and pandas!")
     st.caption(" Developer - Vivek Kovvuru")
     st.markdown('''[![Streamlit App](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
-                 [![Github Link](https://badgen.net/badge/icon/github?icon=github&label)](https://share.streamlit.io/yourGitHubName/yourRepo/yourApp/)
+                 [![Github Link](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/vivkv07/streamlit-pandas-profiling)
                 [![BymeaCoffee](https://badgen.net/badge/icon/buymeacoffee?icon=buymeacoffee&label)](https://www.buymeacoffee.com/vivekkovvuru)''')
     st.write("")
     st.write("")

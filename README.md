@@ -8,7 +8,8 @@
 * Finally, the code creates a profile report using the pandas_profiling library and displays it using the st_profile_report function from the streamlit_pandas_profiling library.
 
 Python Libraries:
-
+[![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
+[![Streamlit App](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
 ```python
 from st_aggrid import AgGrid
 import streamlit as st

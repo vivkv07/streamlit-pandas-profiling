@@ -21,13 +21,13 @@ with col:
 
 col1,col2,col3 = st.columns((0.5,0.1,1.2))
 with col1: 
-    upload_option = st.selectbox('Data Source', ('Upload File', 'Web Link', 'Auto Generate'), help= "Supported Filetypes - csv, json, parquet")
+    upload_option = st.selectbox('Data Source', ('Upload File', 'Web Link', 'Use Demo Data'), help= "Supported Filetypes - csv, json, parquet")
     if upload_option == 'Web Link':
         uploaded_file = st.text_input('URL')
         st.warning("Please note that reading Data from web will take a while!")
     if upload_option == 'Upload File': 
         uploaded_file = st.file_uploader("Upload your file:", type=['csv', 'json', 'parquet'])
-    elif upload_option == 'Auto Generate':
+    elif upload_option == 'Use Demo Data':
         uploaded_file = 'https://storage.googleapis.com/tf-datasets/titanic/train.csv'
 
 

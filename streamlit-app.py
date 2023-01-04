@@ -89,7 +89,7 @@ if uploaded_file is not None:
                         dataset={
                             "description": 'This profiling report was generated using streamlit app developed by Vivek Kv',
                             "copyright_holder": 'Vivek Kv',
-                            "url": 'https://indian-elections.streamlit.app',
+                            "url": 'https://pandas-profiling.streamlit.app',
                             "copyright_year": '2023'
                         }) 
                     
@@ -101,7 +101,7 @@ if uploaded_file is not None:
                         dataset={
                             "description": 'This profiling report was generated using streamlit app developed by Vivek Kv',
                             "copyright_holder": 'Vivek Kv',
-                            "url": 'https://indian-elections.streamlit.app',
+                            "url": 'https://pandas-profiling.streamlit.app',
                             "copyright_year": '2023'
                         }) 
                         

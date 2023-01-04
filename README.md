@@ -1,4 +1,4 @@
-# streamlit-pandas-profiling <br>
+# Data Profiling using Streamlit and Pandas <br>
 [![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
 [![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/) 
 [![pandas-profiling](https://badgen.net/pypi/v/pandas-profiling)](https://pypi.org/project/pandas-profiling/)

@@ -9,7 +9,7 @@
 
 Python Libraries: <br>
 streamlit - [![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/) <br>
-pandas - [![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/) <br>
+pandas - [![Pandas](https://badgen.net/pandas/v/pandas)](https://pypi.org/project/pandas/) <br>
 pandas-profiling - [![pandas-profiling](https://badgen.net/pypi/v/pandas-profiling)](https://pypi.org/project/pandas-profiling/) <br>
 ```python
 from st_aggrid import AgGrid

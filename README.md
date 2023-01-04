@@ -2,6 +2,8 @@
 [![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
 [![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/) 
 [![pandas-profiling](https://badgen.net/pypi/v/pandas-profiling)](https://pypi.org/project/pandas-profiling/)
+[![streamlit-pandas-profiling](https://badgen.net/pypi/v/streamlit-pandas-profiling)](https://pypi.org/project/streamlit-pandas-profiling/)
+[![streamlit-aggrid](https://badgen.net/pypi/v/streamlit-aggrid)](https://pypi.org/project/streamlit-aggrid/)
 
 
 * The code is using the Streamlit and Pandas libraries to create a web application that allows a user to either upload a file, provide a link to a file, or generate a default file. 

@@ -3,3 +3,5 @@ pandas
 pandas-profiling
 streamlit-pandas-profiling
 streamlit-aggrid
+numpy
+pyspark 

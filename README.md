@@ -1,8 +1,9 @@
-# streamlit-pandas-profiling
-<br>
+# streamlit-pandas-profiling <br>
 [![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
-[![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/) <br>
+[![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/) 
 [![pandas-profiling](https://badgen.net/pypi/v/pandas-profiling)](https://pypi.org/project/pandas-profiling/)
+
+
 * The code is using the Streamlit and Pandas libraries to create a web application that allows a user to either upload a file, provide a link to a file, or generate a default file. 
 * The file can be in CSV, JSON, or Parquet format. 
 * The user can then choose to profile either all of the variables in the file or a selected subset of them, and can also choose between a "minimal" and "complete" mode for the profiling.

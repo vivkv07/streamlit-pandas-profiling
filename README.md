@@ -6,3 +6,14 @@
 * The code then creates an editable grid using the AgGrid library to display the data. 
 * The user can then pin, edit, and profile columns in the grid. 
 * Finally, the code creates a profile report using the pandas_profiling library and displays it using the st_profile_report function from the streamlit_pandas_profiling library.
+
+*Libraries Used:*
+
+```python
+from st_aggrid import AgGrid
+import streamlit as st
+import pandas as pd 
+import pandas_profiling
+from streamlit_pandas_profiling import st_profile_report
+from pandas_profiling import ProfileReport
+```

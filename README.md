@@ -7,9 +7,9 @@
 * The user can then pin, edit, and profile columns in the grid. 
 * Finally, the code creates a profile report using the pandas_profiling library and displays it using the st_profile_report function from the streamlit_pandas_profiling library.
 
-Python Libraries:
+Python Libraries: <br>
 [![Streamlit](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
-[![Streamlit App](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
+[![Pandas](https://badgen.net/pypi/v/pandas)](https://pypi.org/project/pandas/)
 ```python
 from st_aggrid import AgGrid
 import streamlit as st

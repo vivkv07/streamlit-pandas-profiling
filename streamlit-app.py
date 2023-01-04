@@ -1,6 +1,3 @@
-# py -m streamlit run .\playground.py
-
-
 from st_aggrid import AgGrid
 import streamlit as st
 import pandas as pd 
@@ -8,9 +5,10 @@ import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 from pandas_profiling import ProfileReport
 
-st.set_page_config(layout='wide', page_title="Pandas Profiling", page_icon= "./pandas.jpg") #Choose wide mode as the default setting
-cola,colb,colc = st.columns((0.2,1,0.1))
-with colb:
+st.set_page_config(layout='wide', page_title="Pandas Profiling", page_icon= "./pandas.jpg") 
+
+spacer1,col,space2 = st.columns((0.3,1,0.1))
+with col:
     st.title(" Data Profiling using streamlit and pandas!")
     st.caption(" Developer - Vivek Kovvuru")
     st.markdown('''[![Streamlit App](https://badgen.net/pypi/v/streamlit)](https://pypi.org/project/streamlit/)
@@ -24,7 +22,6 @@ with colb:
 col1,col2,col3 = st.columns((0.5,0.1,1.2))
 with col1: 
     upload_option = st.selectbox('Data Source', ('Upload File', 'Web Link', 'Auto Generate'), help= "Supported Filetypes - csv, json, parquet")
-with col1:   
     if upload_option == 'Web Link':
         uploaded_file = st.text_input('URL')
         st.warning("Please note that reading Data from web will take a while!")
@@ -116,9 +113,3 @@ if uploaded_file is not None:
             with c:
                 export=profile.to_html()
                 st.download_button(label="Download Report", data=export, file_name='data-profile-report.html')
-
-
-# with st.expander("Docs"):
-#     st.write("""
-#     This data profiling App was built by Sharone Li using Streamlit and pandas_profiling package. You can use the app to quickly generate a comprehensive data profiling and EDA report without the need to write any python code. \n\nThe app has the minimum mode (recommended) and the complete code. The complete code includes more sophisticated analysis such as correlation analysis or interactions between variables which may requires expensive computations. )
-#     """)

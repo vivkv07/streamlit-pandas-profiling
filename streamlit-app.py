@@ -113,10 +113,12 @@ if uploaded_file is not None:
                         }) 
                         
             with b:
+                st.header(" Review and Download the HTML report!")
+                export=profile.to_html()
+                st.download_button(label="Download Full report", data=export, file_name='data-profile-report.html')
                 st_profile_report(profile)
-                export=profile.to_html()
-                st.download_button(label="Download ", data=export, file_name='data-profile-report.html')
 
-            with c:
-                export=profile.to_html()
-                st.download_button(label="Download Report", data=export, file_name='data-profile-report.html')
+                st.info("End of the Report. Scroll up to Download!")
+
+                
+                

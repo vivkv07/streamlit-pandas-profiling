@@ -7,7 +7,8 @@ from pandas_profiling import ProfileReport
 
 st.set_page_config(layout='wide', page_title="Pandas Profiling", page_icon= "./pandas.jpg") 
 
-spacer1,col,space2 = st.columns((0.3,1,0.1))
+spacer1,col,space2 = st.columns((0.5,1,0.5))
+
 with col:
     st.title(" Data Profiling using streamlit and pandas!")
     st.caption(" Developer - Vivek Kovvuru")
@@ -17,10 +18,10 @@ with col:
     st.write("")
     st.write("")
     st.write("")
+    st.write("")
 
-
-col1,col2,col3 = st.columns((0.5,0.1,1.2))
-with col1: 
+col1,col2,col3,col4 = st.columns((0.35,0.4,1.2,0.35))
+with col2: 
     upload_option = st.selectbox('Data Source', ('Upload File', 'Web Link', 'Use Demo Data'), help= "Supported Filetypes - csv, json, parquet")
     if upload_option == 'Web Link':
         uploaded_file = st.text_input('URL')
@@ -41,8 +42,13 @@ if uploaded_file is not None:
         else: 
             st.error("Unsupportable file format uploaded!")
             st.stop()
-        a,b,c,d = st.columns(4)
-        with col1:
+
+        with col2:
+            st.write("")
+            st.write("")
+            st.write("")
+
+
             option1=st.radio(
             'Variables',
             ('Default', 'Selected'), horizontal= True, help= "By Default it considers all Variables to be Profiled")
@@ -56,7 +62,7 @@ if uploaded_file is not None:
                     'Select Variables to be included in profile',
                     var_list)
                 df=df[option3]
-        with col1:
+
             option2 = st.radio(
             'Mode',
             ('Minimal', 'Complete'), horizontal=True, help= "Complete mode may cause the app to run overtime or fail for large datasets due to computational limit")
@@ -65,6 +71,8 @@ if uploaded_file is not None:
                 mode='complete'
             elif option2=='Minimal':
                 mode='minimal'
+            button = st.button('Generate Report')
+
 
         with col3:
             st.caption("Columns can be pinned, edited, and profiled.")
@@ -77,14 +85,13 @@ if uploaded_file is not None:
 
             updated = grid_response['data']
             df1 = pd.DataFrame(updated) 
-        with col1: button = st.button('Generate Report')
         a, b, c = st.columns((0.5,2,0.5))
         if button:
             with a:
                 
                 if mode=='complete':
                     profile=ProfileReport(df,
-                        title="User uploaded table",
+                        title="Profile Report - " + str(uploaded_file),
                         progress_bar=True,
                         dataset={
                             "description": 'This profiling report was generated using streamlit app developed by Vivek Kv',
@@ -96,7 +103,7 @@ if uploaded_file is not None:
                 elif mode=='minimal':
                     profile=ProfileReport(df1,
                         minimal=True,
-                        title="User uploaded table",
+                        title="Profile Report - " + str(uploaded_file),
                         progress_bar=True,
                         dataset={
                             "description": 'This profiling report was generated using streamlit app developed by Vivek Kv',
@@ -108,7 +115,7 @@ if uploaded_file is not None:
             with b:
                 st_profile_report(profile)
                 export=profile.to_html()
-                st.download_button(label="Download Full Report", data=export, file_name='data-profile-report.html')
+                st.download_button(label="Download ", data=export, file_name='data-profile-report.html')
 
             with c:
                 export=profile.to_html()

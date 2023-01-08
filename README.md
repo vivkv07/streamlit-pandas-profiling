@@ -6,7 +6,7 @@
 [![streamlit-aggrid](https://badgen.net/pypi/v/streamlit-aggrid)](https://pypi.org/project/streamlit-aggrid/)
 
 ## About the App
-![Example of live coding an app in Streamlit|635x380](https://raw.githubusercontent.com/streamlit/docs/main/public/images/Streamlit_overview.gif)
+![Example of live coding an app in Streamlit|635x380](https://github.com/vivkv07/streamlit-pandas-profiling/blob/main/images/demo.gif?raw=true)
 
 * The code is using the Streamlit and Pandas libraries to create a web application that allows a user to either upload a file, provide a link to a file, or generate a default file. 
 * The file can be in CSV, JSON, or Parquet format. 

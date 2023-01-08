@@ -15,11 +15,11 @@
 * The user can then pin, edit, and profile columns in the grid. 
 * Finally, the code creates a profile report using the pandas_profiling library and displays it using the st_profile_report function from the streamlit_pandas_profiling library.
 
-## What is streamlit 
+### What is streamlit 
 
 Streamlit lets you turn data scripts into shareable web apps in minutes, not weeks. It’s all Python, open-source, and free! And once you’ve created an app you can use our [Community Cloud platform](https://streamlit.io/cloud) to deploy, manage, and share your app!
 
-## Installation
+### Installation
 
 ```bash
 pip install streamlit
@@ -27,6 +27,34 @@ streamlit hello
 ```
 
 Streamlit can also be installed in a virtual environment on [Windows](https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-windows), [Mac](https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-mac--linux), and [Linux](https://github.com/streamlit/streamlit/wiki/Installing-in-a-virtual-environment#on-mac--linux).
+
+### Use streamlit run
+Once you've cloned the repo, the easiest way to run it is with streamlit run:
+```bash
+streamlit run streamlit_app.py 
+```
+
+As soon as you run the script as shown above, a local Streamlit server will spin up and your app will open in a new tab in your default web browser.
+
+### Pass a URL to streamlit run
+You can also pass a URL to streamlit run! This is great when your script is hosted remotely, such as a GitHub Gist.
+```bash
+streamlit run https://raw.githubusercontent.com/vivkv07/streamlit-pandas-profiling/main/streamlit-app.py
+```
+
+### Run App Using Streamlit as a Python module
+Another way of running Streamlit is to run it as a Python module. This is useful when configuring an IDE like PyCharm to work with Streamlit:
+
+```bash
+# Windows:
+python -m streamlit run streamlit_app.py
+```
+
+
+```bash
+# Linux/MacOS:
+streamlit run your_script.py
+```
 
 ## Run the app using DockerFile
 ### Build a Docker image

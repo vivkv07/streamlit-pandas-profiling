@@ -5,7 +5,7 @@ import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 from pandas_profiling import ProfileReport
 
-st.set_page_config(layout='wide', page_title="Pandas Profiling", page_icon= "./pandas.jpg") 
+st.set_page_config(layout='wide', page_title="Pandas Profiling", page_icon= "./images/pandas.jpg") 
 
 spacer1,col,space2 = st.columns((0.5,1,0.5))
 

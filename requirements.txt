@@ -1,7 +1,11 @@
+#streamlit and other supports
 streamlit
-pandas
-pandas-profiling
 streamlit-pandas-profiling
 streamlit-aggrid
+
+#core
+pandas
+pandas-profiling
+pathlib
 numpy
 pyspark 
